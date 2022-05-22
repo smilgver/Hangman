@@ -41,6 +41,10 @@ namespace Hangman
                     spacedWord = spacedWord.Remove(ind + 1, 1);
                     ind--;
                 }
+                if (spacedWord[0] == ' ')
+                {
+                    spacedWord = spacedWord.Remove(0, 1);
+                }
                 
             }
             return spacedWord;
